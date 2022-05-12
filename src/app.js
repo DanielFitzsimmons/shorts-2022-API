@@ -8,6 +8,7 @@ joi.objectId = require('joi-objectid')(joi);
 
 const path = require('path');
 const categories = require('./routes/categories');
+const trees = require('./routes/trees');
 
 const app = express();
 
@@ -47,6 +48,7 @@ app.use('/uploads', express.static(publicUploadFolder));
 
 //Routes
 app.use('/api/categories', categories);
+app.use('/api/trees', trees);
 
 //Start Server
 const port = process.env.PORT || 3001;
