@@ -1,0 +1,7 @@
+{
+	"shortsPrivateKey": "shorts",
+	"port": "3001",
+	"db": {
+		"connectionString": "mongodb://localhost:37017/shorts"
+	}
+}
