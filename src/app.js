@@ -8,11 +8,12 @@ joi.objectId = require('joi-objectid')(joi);
 
 const path = require('path');
 const categories = require('./routes/categories');
+const users = require('./routes/users');
 const trees = require('./routes/trees');
 
 const app = express();
 
-process.env["NODE_CONFIG_DIR"] = __dirname + "/config";
+
 const config = require('config');
 
 //Load Data From Config File
@@ -48,6 +49,7 @@ app.use('/uploads', express.static(publicUploadFolder));
 
 //Routes
 app.use('/api/categories', categories);
+app.use('/api/users', users);
 app.use('/api/trees', trees);
 
 //Start Server

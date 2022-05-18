@@ -1,5 +1,5 @@
 {
-	"shortPrivateKey": "SHORTS_PRIVATE_KEY",
+	"shortsPrivateKey": "SHORTS_PRIVATE_KEY",
 	"port": "3001",
 	"db": {
 		"connectionString": "DB_CONNECTION_STRING"
